@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
+    <header class="Decodificador de Texto Alura challenge">
+        <img class="logo" src="imagenes/Logo.png" alt="logo"/>
+        <h1>Decodificador Alura</h1>
+    </header>
+    <main>
+        <section class="seccion1">
+            <div class="contenedorCajaTexto">
+                <textarea placeholder="Ingrese el texto aqui" class="cajaTexto" cols="30" rows="10"></textarea>
+            </div>
+            <div class="terminos">
+                <p>Solo letras minusculas y sin acento</p>
+            </div>
+            <div class="btn">
+                <button class="btnEncriptar()" onclick="encriptar()">Encriptar</button> 
+                <button class="btnDesencriptar" onclick="desencriptar()">Desencriptar</button>  
+            </div>
+        </section>
+ 
+        <section class="campo-mensaje">
+            <div>
+                <img src="imagenes/Muñeco.png" class="muneco" alt="muneco">
+            </div>
+            <div class="contenedorParrafos">
+                <h2 id="tituloMensaje">Ningun mensaje fue encontrado</h2>
+                <p id="parrafo">Ingrese el Texto que desee encriptar </p>
+                <textarea placeholder="texto-encriptado"cols="30" rows="10" ></textarea>
+            </div>
+            <div class="contenedorCopiar">
+                <button class="btnCopiar" value="Copiar" onclick="copiar()"> Copiar    </button>
+            </div>
+        </section>
+            
+      
+    </main>
     
+   <section> 
+        <footer>
+            &copy; Todos los derechos reservados | Desarrollado por: Gabriel Moises Silva Sanchez
+        </footer>
+    </section> 
+   
 </body>
+<script src="script.js"></script>
 </html>
+
